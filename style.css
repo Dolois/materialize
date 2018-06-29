@@ -2,8 +2,26 @@
   border: 1px black solid;
 }
 
-header {
-  height: 1vh;
+p {
+  font-size: 2rem;
+}
+
+main {
+  background-image: url("/home-cover.jpg");
+  background-position: center;
+  repeat: no-repeat;
+  height: 50%;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  grid-auto-rows: 80px;
+  grid-auto-flow: dense;
+}
+
+ul {
+  list-style: none;
 }
 
 main {
@@ -12,38 +30,17 @@ main {
   repeat: no-repeat;
 }
 
-#header {
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-  grid-auto-rows: 80px;
-  grid-auto-flow: dense;
+ul li:nth-child(1) {
+  flex 1;
 }
 
-li:nth-child(1) {
-  flex: 1;
-}
-
-li:nth-child(2) {
-  flex: 1;
-}
-
-li:nth-child(3) {
-  flex: 1;
-}
-
-li:nth-child(4) {
-  flex: 1;
+ul li:nth-child(2) {
+  flex 1;
 }
 
 #footer {
-  list-style: none;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
   grid-auto-rows: 80px;
   grid-auto-flow: dense;
-}
-
-p {
-  font-size: 2rem;
 }
